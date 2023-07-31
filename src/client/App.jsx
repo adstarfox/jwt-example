@@ -16,6 +16,8 @@ function App() {
       password: passRef.current.value,
     };
 
+    console.log(body)
+
     axios
       .post("/api/createToken", body)
       .then((res) => {
