@@ -21,7 +21,7 @@ const generateToken = (info) => {
 
 module.exports = {
   createToken: (req, res) => {
-    console.log(`Request: ${req}`)
+    console.log(`Request: ${req.body}`)
     let token = generateToken(req.body)
     res.status(200).send(token)
   },
